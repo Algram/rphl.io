@@ -1,0 +1,10 @@
+body {
+    background: aqua;
+}
+
+#terminal {
+    background: black;
+    color: white;
+    width: 400px;
+    height: 300px;
+}
