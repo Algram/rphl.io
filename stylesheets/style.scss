@@ -1,3 +1,5 @@
+@import 'external/bootstrap';
+
 body {
     align-items: center;
     background: rgb(40, 40, 40);
@@ -8,7 +10,8 @@ body {
 }
 
 #terminal {
-    background: black;
+    font-family: 'Roboto Mono', monospace;
+    background: #2F343F;
     box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
     color: #fff;
     flex: 0 0 auto;
@@ -20,6 +23,6 @@ body {
 input {
     border: none;
     outline: 0;
-    background: #000;
+    background: none;
     color: #fff;
 }
