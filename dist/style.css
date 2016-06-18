@@ -5819,15 +5819,15 @@ button.close {
 
 body {
   align-items: center;
-  background: #282828;
+  background: #202530;
   display: flex;
   height: 100vh;
   justify-content: center; }
 
 #terminal {
   font-family: 'Roboto Mono', monospace;
-  background: #2F343F;
-  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+  background: #2f343f;
+  border-radius: 5px;
   color: #fff;
   flex: 0 0 auto;
   height: 450px;
