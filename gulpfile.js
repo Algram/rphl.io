@@ -13,7 +13,7 @@ gulp.task('serve', ['sass'], function() {
 
   gulp.watch('stylesheets/*.scss', ['sass']);
   gulp.watch('*.html').on('change', browserSync.reload);
-	gulp.watch("javascripts/*.js", ['js-watch']);
+  gulp.watch("javascripts/*.js", ['js-watch']);
 });
 
 // Compile sass into CSS & auto-inject into browsers
@@ -24,15 +24,15 @@ gulp.task('sass', function() {
       browsers: ['last 2 versions'],
       cascade: false
     }))
-		.pipe(gulp.dest('dist'))
-  	.pipe(browserSync.stream());
+    .pipe(gulp.dest('dist'))
+    .pipe(browserSync.stream());
 });
 
 // Convert javascript with babel
 gulp.task('js', function() {
   return gulp.src("javascripts/*.js")
-  .pipe(babel())
-  .pipe(gulp.dest("dist"));
+    .pipe(babel())
+    .pipe(gulp.dest("dist"));
 });
 
 gulp.task('js-watch', ['js'], browserSync.reload);

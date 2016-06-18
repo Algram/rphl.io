@@ -5,6 +5,7 @@
   height: 350px;
   padding: 10px;
   overflow-y: scroll;
+  word-wrap: break-word;
 
   &::-webkit-scrollbar {
     display: none;
@@ -32,15 +33,12 @@
 }
 
 #terminal-input {
-  span {
-    display: inline-block;
-    width: 2%;
-  }
-
   input {
     background: none;
     border: none;
     outline: 0;
-    width: 98%;
+    margin-left: 4px;
+    padding-bottom: 10px;
+    width: 94%;
   }
 }

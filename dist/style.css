@@ -5733,6 +5733,18 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.gh-info li {
+  opacity: 0;
+  animation: animation-li-add 0.3s linear forwards; }
+
+@keyframes animation-li-add {
+  from {
+    opacity: 0;
+    transform: translateY(100px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
 nav {
   padding: 15px 0 5px; }
   nav ul li {
@@ -5754,7 +5766,8 @@ nav {
   font-family: 'Roboto Mono', monospace;
   height: 350px;
   padding: 10px;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  word-wrap: break-word; }
   #terminal::-webkit-scrollbar {
     display: none; }
   #terminal .blue {
@@ -5769,15 +5782,13 @@ nav {
 #terminal-content li {
   list-style-type: none; }
 
-#terminal-input span {
-  display: inline-block;
-  width: 2%; }
-
 #terminal-input input {
   background: none;
   border: none;
   outline: 0;
-  width: 98%; }
+  margin-left: 4px;
+  padding-bottom: 10px;
+  width: 94%; }
 
 body {
   background: #202530;
