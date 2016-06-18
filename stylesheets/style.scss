@@ -1,11 +1,19 @@
 @import 'external/bootstrap';
 @import 'variables';
+
+@import 'navigation';
 @import 'terminal';
 
 body {
-  align-items: center;
   background: rgb(32,37,48);
-  display: flex;
-  height: 100vh;
-  justify-content: center;
+  color: $color-text;
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    color: $teal;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 15px 5px;
 }

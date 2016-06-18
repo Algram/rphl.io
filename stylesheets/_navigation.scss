@@ -1,0 +1,23 @@
+nav {
+  padding: 15px 0 5px;
+
+  ul {
+    li {
+      display: inline;
+      list-style-type: none;
+      padding-right: 20px;
+
+      a {
+        color: $color-text;
+        font-weight: bold;
+        padding: 10px 10px 5px 10px;
+
+        &:hover {
+          border-bottom: 2px solid $red;
+          color: $red;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
