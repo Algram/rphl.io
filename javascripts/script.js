@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var TERMINAL = document.getElementById('terminal');
+  const TERMINAL = document.getElementById('terminal');
   var INPUT = $('#terminal-input input');
   var INPUT_CHAR = $('#terminal-input span');
   var CONTENT = $('#terminal-content');
@@ -22,7 +22,6 @@ $(document).ready(function() {
       '<span class="teal">raphael</span> in ' +
       '<span class="yellow">~/dev/rphl.io</span>'
     );
-    INPUT.val('');
     TERMINAL.scrollTop = TERMINAL.scrollHeight;
   }
 
@@ -47,6 +46,8 @@ $(document).ready(function() {
 
   function execute(command) {
     switch (command) {
+      case '':
+        break;
       case 'clear':
         reset();
         CONTENT.empty();
@@ -65,4 +66,11 @@ $(document).ready(function() {
         }
     }
   }
+
+  $.get('https://api.github.com/users/algram/repos', function(data) {
+    console.log(data);
+    for (var i = 0; i < data.length; i++) {
+      $('.gh-info').append('<li>' + data[i].name + '</li>');
+    }
+  });
 });
