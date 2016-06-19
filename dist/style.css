@@ -5804,23 +5804,31 @@ button.close {
     transform: translateY(0); } }
 
 nav {
-  padding: 15px 0 5px; }
+  padding: 18px 0 5px;
+  text-align: right; }
   nav ul li {
     display: inline;
     list-style-type: none;
     padding-right: 20px; }
+    nav ul li:last-child {
+      padding-right: 15px; }
     nav ul li a {
       color: #d3d0c8;
       font-weight: bold;
       padding: 10px 10px 5px 10px; }
       nav ul li a:hover {
-        border-bottom: 2px solid #f2777a;
-        color: #f2777a;
+        border-bottom: 2px solid #6699cc;
+        color: #6699cc;
         text-decoration: none; }
+
+.scroll {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
 
 #terminal {
   background: #2f343f;
-  border-radius: 5px;
   font-family: 'Roboto Mono', monospace;
   height: 350px;
   padding: 10px;
@@ -5856,7 +5864,7 @@ body {
 .logo {
   color: #66cccc;
   display: inline-block;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   padding: 15px 15px 5px; }
 
@@ -5869,8 +5877,9 @@ h2 {
   padding: 0;
   text-align: center; }
   h2 span {
-    background: #202530;
-    padding: 0 6px; }
+    background: #202530; }
+  h2 .red {
+    color: #f2777a; }
 
 a {
   color: #6699cc; }
