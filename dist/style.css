@@ -5763,9 +5763,22 @@ button.close {
 .margin-bottom-xl {
   margin-bottom: 3rem; }
 
+.blog-posts h4 {
+  font-size: 16px; }
+
+.blog-posts .blog-post {
+  margin-bottom: 40px; }
+
+.blog-posts img {
+  border-radius: 5px;
+  float: left;
+  margin: 3px 15px 10px 0;
+  width: 120px; }
+
 .gh-info .gh-repo {
   animation: animation-li-add 0.4s ease-out forwards;
   background: #2f343f;
+  border-radius: 5px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -5829,8 +5842,10 @@ nav {
 
 #terminal {
   background: #2f343f;
+  border-radius: 5px;
   font-family: 'Roboto Mono', monospace;
-  height: 350px;
+  height: 300px;
+  margin-top: 20px;
   padding: 10px;
   overflow-y: scroll;
   word-wrap: break-word; }
@@ -5868,10 +5883,13 @@ body {
   font-weight: bold;
   padding: 15px 15px 5px; }
 
+h1 {
+  font-size: 32px; }
+
 h2 {
-  border-bottom: 1px dashed #ddd;
+  border-bottom: 1px dashed #d3d0c8;
   font-family: 'Roboto Mono', monospace;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
   line-height: 0;
   padding: 0;

@@ -1,6 +1,7 @@
 @import 'external/bootstrap';
 @import 'variables';
 @import 'mixins';
+@import 'feed';
 @import 'github';
 @import 'navigation';
 @import 'terminal';
@@ -19,10 +20,14 @@ body {
   padding: 15px 15px 5px;
 }
 
+h1 {
+  font-size: 32px;
+}
+
 h2 {
-  border-bottom: 1px dashed #ddd;
+  border-bottom: 1px dashed $color-text;
   font-family: 'Roboto Mono', monospace;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
   line-height: 0;
   padding: 0;
