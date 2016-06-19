@@ -5,7 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     height: 130px;
-    margin: 15px 0 5px;
+    margin: 25px 0 5px;
     opacity: 0;
     padding: 0 15px 5px;
 
@@ -18,6 +18,9 @@
     h3 {
       flex: 1 1 80%;
       font-size: 20px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
     }
 
     .gh-repo__stargazers {

@@ -105,14 +105,14 @@ $(document).ready(function() {
       return obj2.stargazers_count - obj1.stargazers_count;
     });
 
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 8; i++) {
       let repo = data[i];
       $('.gh-info').append(`
-        <div class="col-lg-4">
+        <div class="col-md-4 col-lg-3">
           <div class="gh-repo">
             <h3> ${repo.name} </h3><span class="gh-repo__stargazers">★ ${repo.stargazers_count} </span>
             <p> ${repo.description} </p>
-            <span class="gh-repo__language"> ${repo.language} </span><a href=" ${repo.url} ">View on Github</a>
+            <span class="gh-repo__language"> ${repo.language} </span><a href=" ${repo.html_url} ">View on Github</a>
           </div>
         </div>
       `);

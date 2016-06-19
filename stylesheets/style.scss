@@ -1,20 +1,43 @@
 @import 'external/bootstrap';
 @import 'variables';
-
+@import 'mixins';
 @import 'github';
 @import 'navigation';
 @import 'terminal';
 
 body {
-  background: rgb(32,37,48);
+  background: $color-bg;
   color: $color-text;
   font-family: 'Roboto', sans-serif;
 }
 
 .logo {
-    color: $teal;
-    display: inline-block;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 15px 15px 5px;
+  color: $teal;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 15px 5px;
+}
+
+h2 {
+  border-bottom: 1px dashed #ddd;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 0;
+  padding: 0;
+  text-align: center;
+
+  span {
+    background: $color-bg;
+    padding: 0 6px;
+  }
+}
+
+a {
+  color: $blue;
+
+  &:hover {
+    color: $blue;
+  }
 }

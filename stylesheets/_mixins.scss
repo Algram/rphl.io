@@ -1,0 +1,11 @@
+$margins: (xs: 1rem, sm: 1.5rem, md: 2.0rem, lg: 2.5rem, xl: 3.0rem);
+
+@each $name, $value in $margins {
+  .margin-top-#{$name} {
+    margin-top: $value;
+  }
+
+  .margin-bottom-#{$name} {
+    margin-bottom: $value;
+  }
+}
