@@ -28,13 +28,18 @@ gulp.task('sass', function() {
     .pipe(browserSync.stream());
 });
 
+// Make sure that the browser reload is executed after the js task
+// The reload also needs to be wrapped in an anonymous function
+gulp.task('js-watch', ['js'], function() {
+  browserSync.reload();
+});
+
+
 // Convert javascript with babel
 gulp.task('js', function() {
   return gulp.src("javascripts/*.js")
     .pipe(babel())
     .pipe(gulp.dest("dist"));
 });
-
-gulp.task('js-watch', ['js'], browserSync.reload);
 
 gulp.task('default', ['serve'])

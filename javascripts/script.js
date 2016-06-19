@@ -100,9 +100,22 @@ $(document).ready(function() {
   }
 
   $.get('https://api.github.com/users/algram/repos', function(data) {
-    console.log(data);
-    for (let i = 0; i < data.length; i++) {
-      $('.gh-info').append('<li>' + data[i].name + '</li>');
+    // Sort descending by stargazers_count
+    data.sort(function(obj1, obj2) {
+      return obj2.stargazers_count - obj1.stargazers_count;
+    });
+
+    for (let i = 0; i < 6; i++) {
+      let repo = data[i];
+      $('.gh-info').append(`
+        <div class="col-lg-4">
+          <div class="gh-repo">
+            <h3> ${repo.name} </h3><span class="gh-repo__stargazers">★ ${repo.stargazers_count} </span>
+            <p> ${repo.description} </p>
+            <span class="gh-repo__language"> ${repo.language} </span><a href=" ${repo.url} ">View on Github</a>
+          </div>
+        </div>
+      `);
     }
   });
 });

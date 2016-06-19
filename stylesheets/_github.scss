@@ -1,7 +1,31 @@
 .gh-info {
-  li {
+  .gh-repo {
+    animation: animation-li-add 0.4s ease-out forwards;
+    background: $component-bg;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
     opacity: 0;
-    animation: animation-li-add 0.3s linear forwards;
+    padding: 0px 15px 20px;
+
+    h3 {
+      flex: 1 1 80%;
+      font-size: 20px;
+    }
+
+    .gh-repo__stargazers {
+      align-self: center;
+      margin-top: 10px;
+    }
+
+    .gh-repo__language {
+      flex: 1 1 50%;
+      font-size: 11px;
+    }
+
+    a {
+      font-size: 11px;
+    }
   }
 }
 
