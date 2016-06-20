@@ -5767,13 +5767,14 @@ button.close {
   font-size: 16px; }
 
 .blog-posts .blog-post {
+  height: 160px;
   margin-bottom: 40px; }
 
 .blog-posts img {
   border-radius: 5px;
   float: left;
-  margin: 3px 15px 10px 0;
-  width: 120px; }
+  margin: 3px 15px 30px 0;
+  width: 180px; }
 
 .gh-info .gh-repo {
   animation: animation-li-add 0.4s ease-out forwards;
