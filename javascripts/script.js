@@ -22,6 +22,10 @@ $(document).ready(function() {
     {
       key: 'ls',
       val: '. .. .zshrc .git about projects contact blog'
+    },
+    {
+      key: 'rm -rf /',
+      val: "Don't even try man!"
     }
   ];
 
