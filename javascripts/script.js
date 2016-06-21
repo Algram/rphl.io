@@ -14,10 +14,16 @@ $(document).ready(function() {
 
   let history = [];
 
-  let commands = [{
-    key: 'help',
-    val: "I can't help you right now"
-  }];
+  let commands = [
+    {
+      key: 'help',
+      val: "I can't help you right now"
+    },
+    {
+      key: 'ls',
+      val: '. .. .zshrc .git about projects contact blog'
+    }
+  ];
 
   reset();
 
@@ -92,9 +98,11 @@ $(document).ready(function() {
         reset();
         CONTENT.empty();
         break;
-      case String(command.match(/^cd .*/)):
-        if (command.split(' ').length === 1) {
-          appendAnser('');
+      case String(command.match(/^cd.*/)):
+        let split = command.trim().split(' ');
+
+        if (split.length === 1) {
+          appendAnswer('');
         } else {
           currDir = command.split(' ')[1];
         }
