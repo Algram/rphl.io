@@ -4,7 +4,7 @@ $(document).ready(function() {
   const INPUT_CHAR = $('#terminal-input span');
   const CONTENT = $('#terminal-content');
 
-  const CURR_DIR = '~/dev/rphl.io';
+  let currDir = '~/dev/rphl.io';
 
   let dirTree = [
     '~',
@@ -30,7 +30,7 @@ $(document).ready(function() {
     CONTENT.append(
       '<span class="blue">#</span> ' +
       '<span class="teal">raphael</span> in ' +
-      '<span class="yellow">'+CURR_DIR+'</span>'
+      '<span class="yellow">'+currDir+'</span>'
     );
     TERMINAL.scrollTop = TERMINAL.scrollHeight;
   }
@@ -96,7 +96,7 @@ $(document).ready(function() {
         if (command.split(' ').length === 1) {
           appendAnser('');
         } else {
-          CURR_DIR = command.split(' ')[1];
+          currDir = command.split(' ')[1];
         }
         break;
       default:
