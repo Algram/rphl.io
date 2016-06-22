@@ -152,7 +152,7 @@ $(document).ready(function() {
       let post = data.query.results.item[i];
 
       $('.blog-posts').append(`
-        <div class="col-md-6">
+        <div class="col-xs-12 col-sm-12 col-md-6">
           <div class="blog-post">
             <a href="${post.link}"><h4>${post.title}</h4></a>
             ${post.description}
