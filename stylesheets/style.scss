@@ -26,6 +26,15 @@ body {
   margin-top: 0px;
 }
 
+.bold {
+  color: $teal;
+  font-weight: bold;
+}
+
+.whisper {
+  color: lighten($component-bg, 10%);
+}
+
 h1 {
   font-size: 32px;
 }
