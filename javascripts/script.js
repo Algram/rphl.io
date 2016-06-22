@@ -139,7 +139,7 @@ $(document).ready(function() {
           <div class="gh-repo">
             <h3> ${repo.name} </h3><span class="gh-repo__stargazers">★ ${repo.stargazers_count} </span>
             <p> ${repo.description} </p>
-            <span class="gh-repo__language"> ${repo.language} </span><a href=" ${repo.html_url} ">View on Github</a>
+            <span class="gh-repo__language"> ${repo.language} </span><a href=" ${repo.html_url} " target="_blank">View on Github</a>
           </div>
         </div>
       `);
@@ -154,7 +154,7 @@ $(document).ready(function() {
       $('.blog-posts').append(`
         <div class="col-xs-12 col-sm-12 col-md-6">
           <div class="blog-post">
-            <a href="${post.link}"><h4>${post.title}</h4></a>
+            <a href="${post.link}" target="_blank"><h4>${post.title}</h4></a>
             ${post.description}
           </div>
         </div>
