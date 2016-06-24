@@ -21,7 +21,11 @@ $(document).ready(function() {
     },
     {
       key: 'ls',
-      val: '. .. .zshrc .git about projects contact blog'
+      val: 'about projects contact blog'
+    },
+    {
+      key: 'ls -a',
+      val: '. .. .zshrc .git .supersecret about projects contact blog'
     },
     {
       key: 'rm -rf /',
